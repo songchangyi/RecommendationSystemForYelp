@@ -2,13 +2,19 @@
 
 By Danilo de Oliveira, Paul Riverain, Changyi Song, Data Science students at IMT Atlantique
 
+<div align=center><img width="500" src="/img/rec01.PNG"/></div>
+
 “To connect people with great local businesses”: That’s the purpose of Yelp, an American multinational company founded in 2004, which allows its users to find local businesses such as restaurants, dentists, hairstylists and so on. Users can access Yelp via its website and also through its mobile app. Business’ recommendations are based on the reviews of the community of users of the service (the so-called Yelpers), filtered by a recommender software that looks at various measures of quality, reliability, and activity on Yelp.
 
 Yelp’s database of users is substantial: By the end of Q3 2017, the system had a monthly average of 74 million unique visitors via mobile web and 30 million via the Yelp app, and a total of more than 142 million reviews written by the Yelpers. Yelp also allows its users to add friends and in this way follow their activities and reviews. However, the links between users aren’t used for the main recommendations, which seemed to be from our point of view a missed opportunity.
 
 Therefore, placing ourselves in the shoes of Yelp employees, we have studied and developed a prototype of a new feature to be added to Yelp’s homepage: a “Popular among your friends” tab that makes use of friendships in order to present customized and more reliable recommendations.
 
+<div align=center><img width="500" src="/img/rec02.PNG"/></div>
+
 This project followed the CRISP-DM (Cross-Industry Standard Process for Data Mining) methodology. It provides a structured approach to planning a data mining project, breaking it into six major phases: business understanding, data understanding, data preparation, modeling, evaluation and deployment.
+
+<div align=center><img width="500" src="/img/rec03.PNG"/></div>
 
 The work of this project was conducted on the Yelp Dataset, a subset of the website’s businesses, reviews and user data made available for use in personal, educational and academic purposes. Yelp frequently hosts challenges aimed at students in order to use their data in innovative research projects.
 
@@ -18,6 +24,9 @@ The work of this project was conducted on the Yelp Dataset, a subset of the webs
 First of all, let’s take a look at what motivated this project: lately we’ve been seeing a rise of recommendation systems built on the trust we place in our friends. Facebook, currently the most popular social network in the world, implemented a feature which allows its users to ask for recommendations from their friends, who then provide their suggestions directly on the post. Another good example of the use of social networks for recommender systems is Vermouth, a mobile friend-based review app launched in 2017, focusing on opinions of people that the user knows.
 
 Yelp itself already shows a tendency of becoming a social network, prompting users to search for their Facebook friends on Yelp, as well as sending invitations to their email contacts. It is also possible to see the recent activity of friends and people nearby. We wish to take this trend one step higher and turn this already implemented friend infrastructure into a fully fledged recommender system. Such a feature can stimulate users to leave reviews more often, increase user trust concerning the recommendations, giving advice that’s more suitable for the user, and even avoid shilling attacks (manipulation of reviews by the businesses).
+
+<div align=center><img width="500" src="/img/rec04.PNG"/></div>
+<div align=center><img width="500" src="/img/rec05.PNG"/></div>
 
 What is a friendship on Yelp after all, and is it widespread enough to justify such an idea? A Yelp friendship is a two-way relationship. Once a person accepts an invitation, each one is added to the other’s friends list. An analysis over the users database showed an average of 14 friends for people with more than a friend. Over a total of 550 000 users, 65 000 have more than 5 friends and have published 10 reviews or more, which supports our interest in a friend-based recommender system for the service.
 
